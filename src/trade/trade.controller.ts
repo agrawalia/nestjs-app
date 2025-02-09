@@ -7,7 +7,7 @@ export class TradeController {
 
     constructor(private readonly tradeService : TradeService) {}
 
-    @Get('getAllTrades')
+    @Get()
     async getAllTrades() {
         return this.tradeService.getAllTrades();
     }

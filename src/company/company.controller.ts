@@ -8,22 +8,22 @@ export class CompanyController {
   constructor(private readonly companyService : CompanyService) {}
 
   @Get()
-  async getInvestments() {
+  async getCompanies() {
     return this.companyService.getAllCompanies();
   }
 
   @Post()
-  async createMarket(@Body() companyData: Company) {
+  async createCompany(@Body() companyData: Company) {
     return this.companyService.createCompany(companyData);
   }
 
   @Put(':id')
-  async updateMarket(@Param('id') id: number, @Body() companyData: Company) {
+  async updateCompany(@Param('id') id: number, @Body() companyData: Company) {
     return this.companyService.updateCompany(id, companyData);
   }
 
   @Delete(':id')
-  async deleteMarket(@Param('id') id: number) {
+  async deleteCompany(@Param('id') id: number) {
     return this.companyService.deleteCompany(id);
   }
 
