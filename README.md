@@ -32,8 +32,8 @@ This project is a NestJS-based backend API that interacts with Supabase for data
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-repo/nestjs-supabase-api.git
-cd nestjs-supabase-api
+git clone https://github.com/agrawalia/nestjs-app.git
+cd nestjs-app
 ```
 
 Install dependencies:
